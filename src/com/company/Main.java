@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
@@ -13,11 +14,18 @@ public class Main {
     //get a random number from the range of zero to the number
         // passed in as a parameter.
         Random word = new Random();
+        int indexNoun = word.nextInt(noun.length);
+        Random description = new Random();
+        int indexAdjective = description.nextInt(adjective.length);
+        Random action = new Random();
+        int indexVerb = action.nextInt(verb.length);
 
         /* Write a small story that randomly gets words from each array to
         fill in blank points in the story based on the word type.
          */
         /*
          */
+        System.out.println("noun " + noun[indexNoun] + " adjective " + adjective[indexAdjective]
+                + " verb " + verb[indexVerb]);
     }
 }
