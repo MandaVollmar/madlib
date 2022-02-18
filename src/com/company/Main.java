@@ -22,9 +22,9 @@ public class Main {
         /* Write a small story that randomly gets words from each array to
         fill in blank points in the story based on the word type.
          */
-        System.out.println("Learning to " + verb[indexVerb]+ " can be a(n) " +adjective[indexAdjective]+
-         " challenge." +"\n"+ "There is so much information to " +verb[indexVerb]+ " and retain." +
-                "\n" + "Although there are a lot of " +noun[indexNoun]+"s, it can be " +adjective[indexAdjective]+
+        System.out.println("Learning to " + verb[word.nextInt(5)]+ " can be a(n) " +adjective[word.nextInt(5)]+
+         " challenge." +"\n"+ "There is so much information to " +verb[word.nextInt(5)]+ " and retain." +
+                "\n" + "Although there are a lot of " +noun[word.nextInt(5)]+"s, it can be " +adjective[word.nextInt(5)]+
                 " to know when to use them." +"\n");
 
     }
